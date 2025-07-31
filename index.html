@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuickBite Orders</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-wrapper">
+    <h1>QuickBite Orders</h1>
+
+    <div class="food-grid">
+      <div class="food-box">
+        <img src="burger.jpg" alt="Burger">
+        <div class="info">
+          <h3>Cheesy Burger</h3>
+          <p>$5.99</p>
+          <button class="add-btn" data-name="Burger" data-price="5.99">Add</button>
+        </div>
+      </div>
+      <div class="food-box">
+        <img src="pizza.jpg" alt="Pizza">
+        <div class="info">
+          <h3>Veggie Pizza</h3>
+          <p>$8.99</p>
+          <button class="add-btn" data-name="Pizza" data-price="8.99">Add</button>
+        </div>
+      </div>
+      <div class="food-box">
+        <img src="pasta.jpg" alt="Pasta">
+        <div class="info">
+          <h3>Creamy Pasta</h3>
+          <p>$7.49</p>
+          <button class="add-btn" data-name="Pasta" data-price="7.49">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-box">
+      <h2>🛒 Cart Summary</h2>
+      <ul id="cart-list"></ul>
+      <p>Total: $<span id="total-amount">0.00</span></p>
+      <button id="order-btn" class="checkout-btn" disabled>Place Order</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
